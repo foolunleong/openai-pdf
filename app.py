@@ -31,6 +31,7 @@ from langchain.llms import HuggingFaceHub
 import re
 
 
+st.set_page_config(page_title="Chat with multiple PDFs", page_icon=":ballon:")
 tab1, tab2 = st.tabs(["PDF", "Conversation with multi-PDF"])
 
 
@@ -213,7 +214,6 @@ def tab_multipdf():
 
 
 def app():
-    st.set_page_config(page_title="Chat with multiple PDFs", page_icon=":books:")
 
     with tab1:
         tab_pdf()
